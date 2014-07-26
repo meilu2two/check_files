@@ -7,7 +7,10 @@ import shutil
 print('Script: check_files.py')
 
 # Verzeichnisse, die untersucht werden sollen
-a_sourceTrees = ['.\\Testverzeichnisstruktur', 'C:\\tmp']
+a_currentDirectory = '.'
+a_testDirectory = 'Testverzeichnisstruktur' 
+
+a_sourceTrees = [ os.path.join( a_currentDirectory, a_testDirectory ), 'C:\\tmp' ]
 #print( 'Type of a_sourceTrees: {0}' .format( type( a_sourceTrees ) ) )
 
 # Strings, nach denen gesucht werden soll
