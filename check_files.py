@@ -21,7 +21,7 @@ for a_eachString in a_searchStrings:
 print( '' )                            # Leere Zeile ausgeben erzeugt nur eien Zeilenumbruch
 
 # Daten sollen in folgender Datei gespeichert werden
-a_targetFile = '.\\result.txt'
+a_targetFile = os.path.join( a_currentDirectory, 'result.txt' )
 a_fobjOut = open( a_targetFile ,"w" )
 
 #print('os.listdir:')
